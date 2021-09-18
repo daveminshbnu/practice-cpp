@@ -1,0 +1,21 @@
+//원의 반지름을 기반으로 둘레와 면적을 구하는 프로그램
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  const double PI = 3.14159;
+  double radius, perimeter, area;
+
+  cout << "원의 반지름 입력: ";
+  cin >>radius;
+
+  perimeter = 2 * PI * radius;
+  area = PI * PI * radius;
+  
+  cout << "반지름: " << radius << endl;
+  cout << "둘레: " << perimeter << endl;
+  cout << "면적: " << area;
+  return 0;
+}
